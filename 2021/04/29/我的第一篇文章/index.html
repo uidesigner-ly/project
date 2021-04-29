@@ -7,13 +7,13 @@
     <head>
       <meta charset="utf-8" />
         
-      <meta name="description" content="test" />
+      <meta name="description" content="这里介绍我的产品生活" />
       
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>我的第一篇文章 |  liuyang</title>
+      <title>我的第一篇文章 |  柳洋的产品生活</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -94,7 +94,9 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>#我的博客<br>##我的博客<br>###我的博客<br>####我的博客<br>######我的博客  </p>
+  <p>#我的博客<br>##我的博客</p>
+<span id="more"></span>
+<p>###我的博客<br>####我的博客<br>######我的博客  </p>
 <p><em>我的博客</em>  斜体</p>
 <p><strong>我的博客</strong> 粗体</p>
 <p><em><strong>我的博客</strong></em> 粗斜体</p>
@@ -194,12 +196,6 @@
  
       <!-- reward -->
       
-      <div id="reword-out">
-        <div id="reward-btn">
-          Donate
-        </div>
-      </div>
-      
     </div>
     
 
@@ -222,7 +218,7 @@
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
-        分享
+        我是柳洋，一个学工业设计的产品信任。
       </span>
       <div class="share-wrap">
         <i class="arrow"></i>
@@ -388,7 +384,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="liuyang"></a>
+    <a href="/"><img src="/images/ayer-side.svg" alt="柳洋的产品生活"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -625,63 +621,7 @@
 <!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
- 
-<link rel="stylesheet" href="/css/clipboard.css">
- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script>
-  function wait(callback, seconds) {
-    var timelag = null;
-    timelag = window.setTimeout(callback, seconds);
-  }
-  !function (e, t, a) {
-    var initCopyCode = function(){
-      var copyHtml = '';
-      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
-      copyHtml += '</button>';
-      $(".highlight .code pre").before(copyHtml);
-      $(".article pre code").before(copyHtml);
-      var clipboard = new ClipboardJS('.btn-copy', {
-        target: function(trigger) {
-          return trigger.nextElementSibling;
-        }
-      });
-      clipboard.on('success', function(e) {
-        let $btn = $(e.trigger);
-        $btn.addClass('copied');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-checkbox-circle-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPIED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-checkbox-circle-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-      clipboard.on('error', function(e) {
-        e.clearSelection();
-        let $btn = $(e.trigger);
-        $btn.addClass('copy-failed');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-time-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPY FAILED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-time-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-    }
-    initCopyCode();
-  }(window, document);
-</script>
- 
+
 <!-- CanvasBackground -->
 
 <script>
